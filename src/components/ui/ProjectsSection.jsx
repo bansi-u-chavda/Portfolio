@@ -2,13 +2,16 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Currency Converter Web App",
+    description:
+      "A responsive currency converter web application built with React, Tailwind CSS, and Node.js. It fetches real-time exchange rates from an API and allows users to convert between multiple currencies easily with a clean UI.",
+    image: "/projects/project1.PNG", // update this with actual project screenshot
+    tags: ["React", "TailwindCSS", "Node.js", "Express", "API"],
+    demoUrl: "https://currency-converter-sooty-xi.vercel.app/",
+    githubUrl: "https://github.com/bansi-u-chavda/currency-converter.git", // replace with actual GitHub URL
+
   },
   {
     id: 2,
@@ -56,7 +59,7 @@ export const ProjectsSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
